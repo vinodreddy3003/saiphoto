@@ -1,0 +1,42 @@
+.chat-button {
+    position: fixed;
+    bottom: 60px;
+    right: 80px;
+    z-index: 1000;
+  }
+  
+  .chat-button button {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  @media (max-width: 768px) {
+    .chat-button {
+      bottom: 15px;  /* Adjust position for smaller screens */
+      right: 15px;   /* Adjust position for smaller screens */
+    }
+  
+    .chat-button button {
+      width: 60px;   /* Adjust button size for mobile */
+      height: 60px;  /* Adjust button size for mobile */
+    }
+  
+    .anticon {
+      font-size: 24px; /* Adjust icon size for mobile */
+    }
+  }
+  
+  /* For smaller mobile devices */
+  @media (max-width: 480px) {
+    .chat-button {
+      bottom: 10px;  /* Further adjust position for smaller screens */
+      right: 10px;   /* Further adjust position for smaller screens */
+    }
+  
+    .chat-button button {
+      width: 50px;   /* Further adjust button size for smaller screens */
+      height: 50px;  /* Further adjust button size for smaller screens */
+    }
+  
+    .anticon {
+      font-size: 20px; /* Further adjust icon size for smaller screens */
+    }
+  }

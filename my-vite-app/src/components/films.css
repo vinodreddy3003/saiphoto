@@ -1,0 +1,37 @@
+.films-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 10px; /* Add padding for better touch targets */
+ 
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 80%; /* Full width for mobile */
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures the border-radius is applied */
+}
+
+.custom-video {
+  width: 100%; /* Full width on mobile */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .custom-video {
+    height: auto; /* Ensure height adjusts based on width */
+  }
+}
+
+@media (max-width: 480px) {
+  .films-container {
+    padding: 5px; /* Less padding on smaller screens */
+  }
+
+  .video-wrapper {
+    border-radius: 5px; /* Smaller border radius on mobile */
+  }
+}

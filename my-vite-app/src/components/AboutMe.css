@@ -1,0 +1,101 @@
+/* General Styles for All Devices */
+.about-us-container {
+  padding: 0;
+}
+
+.top-image-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.top-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  align-items: center;
+  background-color: white;
+}
+
+.text-section {
+  width: 50%;
+  padding-right: 80px;
+}
+
+.text-section h2 {
+  margin-left: 180px;
+  margin-top: 10px;
+  color: #D4AF37;
+  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.text-section p {
+  width: 446px;
+  margin-left: 180px;
+  margin-top: 10px;
+  top: 586px;
+  color: #6B707F;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.image-section {
+  display: flex;
+  margin-right: 60px;
+  width: 40%;
+}
+
+.portrait-image {
+  width: 48%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 1px;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .content-section {
+    flex-direction: column; /* Stack content vertically */
+    padding: 20px; /* Smaller padding for mobile */
+  }
+
+  .text-section {
+    width: 100%; /* Full width for text section */
+    padding: 0; /* Remove side padding */
+    margin: 0; /* Remove margin */
+  }
+
+  .text-section h2 {
+    font-size: 28px; /* Adjust the font size for smaller screens */
+    margin: 10px 0; /* Adjust margins for mobile */
+    text-align: center; /* Center align heading */
+  }
+
+  .text-section p {
+    font-size: 12px; /* Smaller font size for mobile */
+    width: 100%; /* Full width for paragraph */
+    margin: 10px 0; /* Adjust margins for mobile */
+    text-align: center; /* Center align paragraph text */
+  }
+
+  .image-section {
+    width: 100%; /* Full width for image section */
+    justify-content: center; /* Center images */
+    margin: 0; /* Remove right margin */
+  }
+
+  .portrait-image {
+    width: 100%; /* Make the image take full width on mobile */
+    margin-bottom: 10px; /* Space between images */
+    border-radius: 8px; /* Maintain border-radius */
+  }
+}

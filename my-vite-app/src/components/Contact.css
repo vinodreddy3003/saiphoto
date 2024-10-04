@@ -1,0 +1,227 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in element's width and height */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Contact Container */
+.contact-container {
+  width: 100%;
+  height: auto; /* Adjust height for content */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif; /* Include fallback font */
+}
+
+/* Header Image */
+.header-image {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Contact Information */
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  color: #6B707F;
+  font-size: 26px; /* Larger font for readability */
+  font-weight: 500;
+  margin-top: 120px;
+  border: 1px solid #6B707F;
+  padding: 16px 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info p {
+  color: #6B707F;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* Call Section */
+.call {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+/* Separator */
+.separator {
+  width: 50%;
+  height: 1px;
+  background-color: #6B707F;
+  margin: 10px auto;
+  margin-top: 32px;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contact-form h2 {
+  color: #6B707F;
+  font-size: 26px; /* Larger font for readability */
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-form p {
+  color: #6B707F;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* Form Group */
+.form-group {
+  margin-top: 40px; /* Reduced margin for mobile */
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column; /* Stack fields vertically on mobile */
+  justify-content: center;
+}
+
+/* Label Styles */
+.form-group label {
+  color: #6B707F;
+  font-size: 16px; /* Smaller font for labels */
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left; /* Align labels to the left */
+}
+
+/* Input and Textarea Styles */
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Make sure input fills the available width */
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6B707F; /* Dashed border */
+  font-size: 16px; /* Consistent font size */
+  box-sizing: border-box;
+}
+
+/* Date and Select Styles */
+.form-group input[type="date"],
+.form-group select {
+  width: 50%; /* Ensure full width */
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6B707F; /* Rounded corners */
+   /* Light background */
+  font-size: 16px; /* Consistent font size */
+}
+
+/* Focus Styles */
+.form-group input[type="date"]:focus,
+.form-group select:focus {
+  outline: none; /* Remove outline */
+}
+
+/* Select Dropdown Styles */
+.form-group select {
+  appearance: none; /* Remove default dropdown arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="%234A90E2" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" /></svg>'); /* Custom dropdown arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Position custom arrow */
+  background-size: 20px; /* Size of the custom arrow */
+}
+
+/* Textarea Height */
+.form-group textarea {
+  height: 100px; /* Maintain height */
+}
+
+/* Button Styles */
+.bu {
+  background-color: #DEDCCF;
+  color: #6B707F;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px; /* Keep size consistent */
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%; /* Full width button */
+  max-width: 219px; /* Limit max width */
+  height: 60px;
+  margin-top: 20px;
+}
+
+/* Disabled Button State */
+.bu:disabled {
+  background-color: #ccc; /* Disabled state */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 480px) {
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 22px; /* Smaller font size for headings */
+  }
+
+  .contact-info p,
+  .contact-form p {
+    font-size: 16px; /* Smaller font size for paragraphs */
+  }
+
+  .form-group label {
+    font-size: 14px; /* Smaller font size for labels */
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 14px; /* Smaller font size for inputs */
+  }
+
+  .bu {
+    font-size: 16px; /* Adjust button font size */
+  }
+
+  .separator {
+    width: 80%; /* Wider separator on mobile */
+  }
+
+  .form-row {
+    flex-direction: column; /* Stack inputs vertically on mobile */
+  }
+
+  .header-image {
+    height: 200px; /* Set a height for the header image on mobile */
+  }
+
+  /* Adjustments for specific event type titles and options */
+  .event-type-title {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .event-type-option {
+    font-size: 16px; /* Smaller font size for options */
+  }
+}

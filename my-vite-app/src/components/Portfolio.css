@@ -1,0 +1,66 @@
+.portfolio {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+  margin: 10px 200px;
+}
+
+
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .portfolio {
+    -webkit-column-count: 1; /* Switch to a single column */
+    -moz-column-count: 1;
+    column-count: 1;
+    margin: 10px; /* Adjust margin for mobile */
+  }
+
+  .portfolio-card {
+    margin-bottom: 20px; /* Adds spacing between cards */
+  }
+}
+
+.portfolio-card {
+  position: relative; /* For absolute positioning of overlay */
+  overflow: hidden; /* Hides overflow if needed */
+  display: flex; /* Flex to allow centering */
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image */
+}
+
+.portfolio-card img {
+  max-width: 100%; /* Ensures image does not exceed card width */
+  height: auto; /* Maintains aspect ratio of images */
+  object-fit: contain;
+  margin-top: 20px; /* Ensures the image fits within the card without distortion */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay for better visibility */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 1; /* Always visible */
+  transition: opacity 0.3s ease; /* Smooth fade in effect */
+}
+
+.overlay h2 {
+  font-size: 24px;
+  font-family: 'Times New Roman', serif; /* Consistent font family */
+  margin: 0;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-family: 'Times New Roman', serif; /* Consistent font family */
+}
